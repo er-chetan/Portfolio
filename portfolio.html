@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="./owl-slider/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl-slider/assets/owl.theme.default.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <button class=" position-fixed fs-5 text-danger px-3 py-2 bg-gray bottom-0 end-0 me-2 mb-2 border-0 rounded-circle" id="toptobottom" onclick="screentop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <nav class="container-fluid navbar  position-fixed text-white " id="navbarscroll">
+        <div class="row w-100 p-1">
+            <div class="col-12 col-lg-9 col-md-6 ">
+                <h1 class="fs-2 ms-5 fw-bold ">Django Developer</h1>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 fs-5 my-auto text-center  ">
+                <i class="fa-solid fa-phone me-1 "></i>
+                <span>7206069515</span>
+                <i class="fa-solid fa-bars ms-4" id="showmenu"></i>
+            </div>
+       </div>
+    </nav>
+
+    <div class="container-fluid hidden-links position-fixed screen-size " id="navmenu">
+        <div class="row">
+            <div class="col position-relative mb-5">
+                <i class="fa-solid fa-xmark text-white fs-5 mt-4 position-absolute " id="hidemenu"></i>
+            </div>
+        </div>
+        <div class="row  d-flex justify-content-center align-items-center mt-3">
+            <div class="col-4 mt-3 text-center ">
+                <a href="" class="text-decoration-none d-block h4 mb-3 color-yellow">Home</a>
+                <a href="" class="text-decoration-none d-block text-white h4 mb-3" id="click-about">About</a>
+                <a href="" class="text-decoration-none d-block text-white h4 mb-3">What i do</a>
+                <a href="" class="text-decoration-none d-block text-white h4 mb-3">Resume</a>
+                <a href="" class="text-decoration-none d-block text-white h4 mb-3">Portfolio</a>
+                <a href="" class="text-decoration-none d-block text-white h4 mb-3">FAQ</a>
+                <a href="" class="text-decoration-none d-block text-white h4 mb-3">Client Speak</a>
+                <a href="" class="text-decoration-none d-block text-white h4 mb-3">Contact Me</a>
+                <div class="row link-icons mt-5">
+                    <div class="col">
+                        <i class="fa-brands fa-twitter text-white h3 me-3"></i>
+                        <i class="fa-brands fa-facebook text-white h3 me-3"></i>
+                        <i class="fa-brands fa-instagram text-white h3 me-3"></i>
+                        <i class="fa-brands fa-linkedin text-white h3 me-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid intro screen-size">
+        <div class="row h-100 text-white d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-6 h-50 text-center mb-5">
+                <h2>HI, I AM ENGINEER !!!</h2>
+                <h1 class="mt-4 fw-bold head-developer ">DEVELOPER</h1>
+                <p class="h5 mt-4">based in Haryana, India</P>
+                <button onclick="view_work()" class="back-yellow px-5 py-3 mt-4 border-0" id="view_work"><a href="" class="text-decoration-none text-black ">View My Work</a></button>
+                <i class="fa-solid fa-arrow-down d-block mt-5 fs-5 "></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid  about-me mt-5 ">
+        <div class="row">
+            <div class="col text-center">
+                <span class="color-black back-yellow p-1">About Me</span>
+                <h1 class="color-black mt-3 fw-bold">Know Me More</h1>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center  g-3">
+            <div class="col-10 col-lg-7 te">
+                <h1 class="position-relative fw-light">Hi, I'm <span class="fw-bold position-relative ">Chetan Kumar</span></h1>
+                <p class=" fs-4 mt-4">I'm pursuing my BE(Bachelor Of Engineering) from Chandigarh University.I'm a <u>Full Stack Django Developer</u> with a passion for <u>Web App Design</u>. I enjoy developing simple, clean and slick websites that provide real value to the end user.I am good in DSA and solving question on coding platform such as <a href="https://leetcode.com/chetankumar722003/" class="text-danger" target="_blank">leetcode</a> therefore, I have skill of problem solving and decision making in a "Worst Case Scenario"</p>
+            </div>  
+            <div class="col-12 col-lg-3 text-center mb-5 ">
+                <h1 class="position-relative ">1</h1>
+                <h2 class="mb-5">Years Of <span class="fw-bold">Experience</span></h2>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center g-2">
+            <div class="col-11 col-lg-2">
+                <span class="text-secondary h6">Name:</span>
+                <h5 class="fw-bold  " >Chetan Kumar</h5>
+            </div>
+            <div class="col-11 col-lg-3">
+                <span class="text-secondary h6">Email:</span>
+                <h5 class="fw-bold  "><u>chetankumar722003@gmail.com</u></h5>
+            </div>
+            <div class="col-11 col-lg-2">
+                <span class="text-secondary h6">Date of birth:</span>
+                <h5 class="fw-bold  " >07 Febrary 2003</h5>
+            </div>
+            <div class="col-11 col-lg-2">
+                <span class="text-secondary h6">From:</span>
+                <h5 class="fw-bold " >Ambala, Haryana, India</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid tech-field pb-5">
+        <div class="row text-center">
+            <div class="col mt-5">
+                <span class="back-yellow p-1">What I Do?</span>
+                <h1 class="mt-3">How I can help your next project</h1>
+            </div>
+        </div>
+        <div class="row mt-3 d-flex justify-content-center align-items-center text-center">
+            <div class="col-11 col-lg-3 g-5">
+                <span>
+                    <i class="fa-solid fa-laptop-code color-yellow mb-4"></i>
+                    <h3>Front-End Developer</h3>
+                </span>
+               <p class="color-gray"> A front-end developer is a type of software developer who specializes in creating and designing the user interface (UI) and user experience (UX) of websites and web applications. The primary responsibility of a front-end developer is to ensure that the visual and interactive aspects of a website or application are user-friendly and functionally efficient.</p>
+            </div>
+            <div class="col-11 col-lg-3 g-5">
+                <span>
+                    <i class="fa-solid fa-keyboard color-yellow mb-4" ></i>
+                    <h3>Back-End Developer</h3>
+                </span>
+                <p class="color-gray">Back-end development means working on server-side software, which focuses on everything you can’t see on a website. Back-end developers ensure the website performs correctly, focusing on databases, back-end logic, application programming interface (APIs), architecture, and servers. They use code that helps browsers communicate with databases, store, understand, and delete data.</p>
+            </div>
+            <div class="col-11 col-lg-3 g-5">
+                <span>
+                    <i class="fa-solid fa-user-secret color-yellow mb-4"></i>
+                    <h3>Data Structure</h3> 
+                </span>
+                <p class="color-gray">Data Structure is a branch of Computer Science. The study of data structure allows us to understand the organization of data and the management of the data flow in order to increase the efficiency of any process or program.The data structure name indicates that organizing the data in memory. Each data structure contains information about the data values, relationships between the data  </p>
+            </div>
+        </div>    
+
+        <div class="row mt-5 d-flex justify-content-center align-items-center text-center ">
+
+            <div class="col-11 col-lg-3 g-5">
+                <i class="fa-solid fa-network-wired color-yellow mb-4"></i>
+                <h3>Computer Network</h3>
+                <p class="color-gray">A computer network is a set of devices connected through links. A node can be computer, printer, or any other device capable of sending or receiving the data. The links connecting the nodes are known as communication channels.Computer Network uses distributed processing in which task is divided among several computers. Instead, a single computer handles an entire task, each separate computer handles a subset</p>
+            </div>
+            <div class="col-11 col-lg-3 g-5">
+                <i class="fa-solid fa-database color-yellow mb-4"></i>
+                <h3>DBMS</h3>
+                <p class="color-gray">A database management system (or DBMS) is essentially nothing more than a computerized data-keeping system. Users of the system are given facilities to perform several kinds of operations on such a system for either manipulation of the data in the database or the management of the database structure itself. Database Management Systems (DBMSs) are categorized according to their data structures or types.</p>
+            </div>
+            <div class="col-11 col-lg-3 g-5">
+                <i class="fa-brands fa-python color-yellow mb-4"></i>
+                <h3>Python Developer</h3>
+                <p class="color-gray">A Python developer can work as a web developer, data analyst or software engineer. Python developers assist organizations with their technological framework. They supervise the information flow between the servers and the users. Python developers use the Python programming language to implement projects or answer questions. They can crunch data, write web application back ends and automate scripts. </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid summary-resume mt-5">
+        <div class="row text-center pt-5 mb-5">
+            <div class="col">
+                <span class="back-yellow p-1">Resume</span>
+                <h1 class="mt-3">A summary of My Resume</h1>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center tilt mb-5">
+            <div class="col-12 col-lg-5 g-5">
+                <h2 class="mb-4 fw-bold ">My Education</h2>
+                <div class="row summary-carts px-3">
+                    <div class="col-12 col-lg-12 mb-4">
+                        <h4 class="fw-bold">Bachelor of Engineering(Computer Science and Engineering)</h4>
+                        <h5>Chandigarh University / 2020-2024</h5>
+                        <h6>Gharuan, Mohali, Punjab</h6>
+                        <h6>Cgpa : 7.14</h6>
+                    </div>
+                    <div class="col-12 col-lg-12 mb-4">
+                        <h4 class="fw-bold">Intermediate (CBSE)</h4>
+                        <h5>SMS Public School</h5>
+                        <h6>Barara, Ambala, Haryana</h6>
+                        <h6>Percentage - 87.5%</h6>
+                        <h6>Year - 2020</h6>
+                    </div>
+                    <div class="col-12 col-lg-12">
+                        <h4 class="fw-bold">Matriculation (HBSE)</h4>
+                        <h5>PSC Jain Public School</h5>
+                        <h6>Barara, Ambala, Haryana</h6>
+                        <h6>Percentage - 84.5%</h6>
+                        <h6>Year - 2018</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 g-5">
+                <h2 class="mb-4 fw-bold">INDUSTRIAL TRAINING</h2>
+                <div class="row px-3 summary-carts">
+                    <div class="col-12 mb-4 ">
+                        <h4 class="fw-bold">Front-end Development Training</h4>
+                        <h5><a class=" text-dark" href="https://techgeecs.com/" target="_blank">Techgeecs</a> / 2023</h5>
+                        <p> In this training,I learned about Html, CSS, Javascript,JQuery, Bootstrap</p>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <h4 class="fw-bold">Backend-end Development Training</h4>
+                        <h5><a class="text-dark" href="https://techgeecs.com/" target="_blank">Techgeecs</a> / 2023</h5>
+                        <p> In this training, I learned about Python,Django,Mysql,Mongodb</p>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="fw-bold">C++ with Data Structure & Algorithm</h4>
+                        <h5><a class="text-dark" href="https://techgeecs.com/" target="_blank">Techgeecs</a> / 2022</h5>
+                        <p>In this training, I learned about linear data structure I am solving the many question with different approaches and techniques and this is my <a href="https://leetcode.com/chetankumar722003/" class="text-danger" target="_blank">leetcode</a> profile </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid skills pt-4">
+        <h2 class="fw-bold " id="myskill-heading">My Skills</h2>
+        <div class="row d-flex justify-content-center align-items-center mt-4">
+            <div class="col-11 col-lg-5 pe-4 ">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">Html<span>90%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">CSS<span>85%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">Javascript<span>70%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">jQuery<span>80%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">Bootstrap<span>90%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">Git Hub<span>75%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12  mb-4">
+                        <h5 class="fw-bold">Database Management System<span>80%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-lg-5 pe-4">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">C/C++<span>90%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">Core Java<span>90%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">Python<span>80%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">Django Framework<span>80%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">MysqL<span>90%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">MongoDB<span>90%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-12 mb-4">
+                        <h5 class="fw-bold">Fundamentals Of Computer Network<span>75%</span></h5>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar back-yellow " style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5 pt-3">
+            <a href="./resume/resume-2024.pdf" download="Chetan CV" id="btn-download" class="text-decoration-none color-yellow px-5 py-3 fw-bold fs-5">Download CV</a>
+        </div>
+    </div>
+
+
+    <div class="container-fluid recents-projects text-center mt-5 py-5" id="recents_projects">
+
+        <span class="back-yellow p-1 ">Portfolio</span>
+        <h1 class="mt-2 fw-bold">Some of my most recent projects</h1>
+        <div class="row d-flex justify-content-center align-items-center mt-5">
+            <div class="col-12 col-lg-1">
+                <a href="" class="text-decoration-none color-black fw-bold">HTML/CSS</a>
+            </div>
+            <div class="col-12 col-lg-1">
+                <a href="" class="text-decoration-none color-gray fw-bold">Javascript</a>
+            </div>
+            <div class="col-12 col-lg-1">
+                <a href="" class="text-decoration-none color-gray fw-bold">Bootstrap</a>
+            </div>
+            <div class="col-12 col-lg-1">
+                <a href="" class="text-decoration-none color-gray fw-bold">tkinter</a>
+            </div>
+            <div class="col-12 col-lg-1">
+                <a href="" class="text-decoration-none color-gray fw-bold">Django</a>
+            </div>
+        </div>
+
+        <div class="row d-block mt-5">
+            <div class="col-12">
+                <div class="row recents-projects-imgs d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-lg-3 g-4">
+                        <img src="./img/project-1.jpg" alt="" >
+                    </div>
+                    <div class="col-12 col-lg-3 g-4">
+                        <img src="./img/project-2.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-lg-3 g-4">
+                        <img src="./img/project-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row recents-projects-imgs d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-lg-3 g-4">
+                        <img src="./img/project-1.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-lg-3 g-4">
+                        <img src="./img/project-2.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-lg-3 g-4">
+                        <img src="./img/project-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid interested my-5">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="text-white fw-bold">Interested in working with me?</h1>
+                <button class="px-5 py-3 border-0 back-yellow fw-bolder mt-4">Hire Me!</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid questions mt-5">
+        <div class="row d-flex justify-content-center align-items-center p-5">
+            <div class="col-12 col-lg-5 ">
+                <span class="back-yellow p-1  fw-bold">FAQ</span>
+                <h1 class="fw-bold mb-5 mt-3">Have any questions?</h1>
+
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12 accordion" id="query">
+                        <div class="accordion-items " >
+                            <h1 class="accordion-header" id="heading-one">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Who is django developer?
+                                </button>
+                            </h1>
+                            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#query">
+                                <div class="accordion-body">
+                                    A Django developer is responsible for using the Django framework to create, maintain, and update web applications. Their job involves writing server-side code, building user interfaces, and integrating with databases.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-items">
+                            <h1 class="accordion-header" id="heading-two">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can i help you ?
+                                  </button>
+                            </h1>
+                            <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="heading-two" data-bs-parent="#query">
+                                <div class="accordion-body">
+                                    I can build both the front end and the back end of a website. The front end (the parts of a website a user sees and interacts with) and the back end (the behind-the-scenes data storage and processing) require different skill sets.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-items">
+                            <h1 class="accordion-header" id="heading-three">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Simple process for workflow?
+                                  </button>
+                            </h1>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="heading-three" data-bs-parent="#query">
+                                <div class="accordion-body">
+                                  This process includes some of steps such as identify the problem or need, define requirements, design solution, implement code, test code. lastly check the code is works correctly then deploy otherwise fix the bugs and error and again test the code until the code not runs correctly. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-items">
+                            <h1 class="accordion-header" id="heading-four">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Why responsive one page template?
+                                  </button>
+                            </h1>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="heading-four" data-bs-parent="#query">
+                                <div class="accordion-body">
+                                    A responsive template is a complete viewport design that combines components and responsive components for the different screen size view. The template fills the entire viewport and includes the background, header, and content.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class=" col-12 col-lg-5 g-5 d-flex justify-content-center align-items-center">
+                <img src="./img/faq.png" alt="" class="w-100">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-quotes mt-5">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-8 text-center">
+                <h3 class="text-white px-5 mt-5">Some quotes inspired me everytime !!!</h3>
+                <div class="owl-carousel my-quotes-slider text-white text-center p-5 mb-5">
+                    <div class="item p-5 ">
+                        <h2><q>keep a code is <span class="text-danger">simple and efficient</span> to understand easily and work fast....</q></h2>
+                    </div>
+                    <div class="item p-5">
+                        <h2><q>If <span class="text-danger">consistency</span> is decreases then the confidence of achieving anything will always decreases....</q></h2>
+                    </div>
+                    <div class="item p-5 mt-1">
+                        <h2><q><span class="text-danger">Self control</span> is biggest mantra of success....</q></h2>
+                    </div>
+                    <div class="item p-5">
+                        <h2><q>Coding will increase the level of thinking to build the <span class="text-danger">efficient and effective</span> solution of any problem....</q></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 p-5 d-flex justify-content-center align-items-center">
+                <img src="./img/chetan_background.jpg" alt="" class="border rounded-circle border-0 " >
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid get-touch back-yellow py-5">
+        <div class="row d-flex justify-content-center align-items-center ">
+            <div class="col-12 col-lg-5 fs-5 p-5">
+                <h1 class="fw-bold mb-5">Let's get in touch</h1>
+                <p class="mb-4">I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.</p>
+                <h5 class="fw-bold ">Living In:</h5>
+                <span class="">Satkar PG kharar, Mohali</span>
+                <h5 class="fw-bold mt-4">Call:</h5>
+                <span class="">7206069515</span>
+                <div class="icons-social mt-4 fs-2 color-gray">
+                    <i class="fa-brands fa-instagram me-2"><a href=""></a></i>
+                    <i class="fa-brands fa-twitter me-2"></i>
+                    <i class="fa-brands fa-github me-2"></i>
+                    <i class="fa-brands fa-facebook me-2"></i>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 fs-5 p-5">
+                <h1 class="fw-bold">If you are interested to hire me Fill this details </h1>
+                <label for="" class="d-block mt-5">What is Your Name:</label>
+                <input type="text" class="d-block border-0 back-yellow border-bottom border-2 w-100 mt-2">
+                <label for="" class="d-block mt-3">Your Email Address:</label>
+                <input type="text" class="d-block border-0 back-yellow border-bottom border-2 w-100 mt-2">
+                <label for="" class="d-block mt-3">How can I Help you?::</label>
+                <textarea name="" id="" cols="30" rows="4" class="w-100 border-0 back-yellow border-bottom border-2 border-danger mt-4"></textarea>
+                <button class="border-dark bg-dark text-white fw-bold h6 px-5 py-3 mt-4">Submit <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid back-black py-2">
+        <div class="row text-white py-5 px-1 d-flex justify-content-center ">
+            <div class="col-12 col-lg-6 ">
+                <h5>Copyright © 2023 <a href="" class="color-yellow">Callum.</a> All Rights Reserved.</h5>
+            </div>
+            <div class="col-12 col-lg-5">
+                <h5 class="float-end">Designed by <a href="" class="color-yellow">Chetan</a></h5>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./owl-slider/owl.carousel.min.js"></script>
+    <script src="./portfolio.js"></script>
+
+</body>
+</html>

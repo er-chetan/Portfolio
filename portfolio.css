@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+#toptobottom{
+    z-index: 3000;
+    box-shadow: 1px 1px 12px #c25b66;
+}
+#toptobottom:hover{
+    color: black !important;
+    background-color: #D7C445;
+    box-shadow: 1px 1px 15px #D7C445;
+    transition: all .3s linear .1s;
+}
+.back-yellow{
+    background-color: #F5DF4E !important;
+}
+.back-black{
+    background-color: #212529!important;
+}
+.color-gray{
+    color: #4D555A;
+}
+.color-yellow{
+    color: #F5DF4E !important;
+}
+.color-black{
+    color: #212529;
+}
+.screen-size{
+    height: 100vh; 
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.navbar{
+    z-index: 500;
+}
+.head-developer{
+    width: 100%;
+    white-space: nowrap;
+    font-size: 100px;
+    border-right: 10px solid;
+    overflow: hidden;
+    /* letter-spacing:5px !important; */
+    animation:typing 2s steps(9) infinite ;
+}
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing {
+    from{
+        width: 0%;
+    } 
+}
+.hidden-links{
+    background-color:#111111fb;
+    z-index: 1000;
+}
+.hidden-links .row .col i{  
+    top: 6px;
+    right: 100px;
+}
+.hidden-links .row .col-4 a:hover{
+    color: #F5DF4E !important;
+}
+.intro{
+    background-image: url(./img/intro-bg.jpg);
+    background-color:#0a0909bb;
+    background-blend-mode: darken;
+}
+.intro .row .col-12 i{
+    animation-name: icon-down;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+
+}
+@keyframes icon-down{
+    from{
+        transform: translateY(0px);
+        opacity: 0.3;
+    }
+    to{
+        transform: translateY(45px);
+        opacity: 1;
+    }
+}
+.about-me .row .col-lg-3 h1 span::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #F5DF4E;
+    position: absolute;
+    bottom: 0px;
+}
+.about-me .row .col-lg-3 h1::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #F5DF4E;
+    width: 28%;
+    height: 38%;
+    border-radius: 50%;
+    top: 85px;
+    transform: translateX(7px);
+ }
+.about-me .row .col-lg-3 h1{
+    font-size: 200px;
+    color: #4C4D4D;
+}
+.about-me .row .col-lg-3 h2{
+    margin-top: -25px;
+}
+.tech-field{
+    gap: 30px;
+    margin-top: 100px;
+    background-color:#F8F9FA ;
+}
+.tech-field .row .col-lg-3 i{
+    font-size: 60px;
+}
+.summary-carts {
+   border-left: 2px solid #F5DF4E;
+}
+.summary-carts .col-12{
+    height:190px;
+    border-bottom: 1px solid rgba(212, 206, 206, 0.986);
+}
+.skills h5 span{
+    float: right;
+}
+#myskill-heading{
+    margin-left: 112px;
+}
+#btn-download{
+    border: 2px solid #212529;
+}
+#btn-download:hover{
+    color: white !important;
+    background-color: #212529;
+    transition: all .4s ease-in-out ;
+}
+.recents-projects-imgs .col-lg-3 img{
+    width: 100%;
+    height: 350px;
+}
+.interested{
+    padding: 130px 200px;
+    background-image: url(./img/intro-bg-2.jpg);
+    background-blend-mode: overlay;
+    background-color: #2d2d2e;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.my-quotes{
+    background-color: #939597;
+}
+.my-quotes .row .col-lg-4 img{
+    width: 100%;
+    height: 330px;
+}
+.my-quotes-slider .owl-prev,.my-quotes-slider .owl-next{
+    background-color:#fafafacc!important;
+    text-align: center !important;
+    color: black !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    font-size: 45px !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    top: -125px !important;
+    z-index: 1;
+}
+.my-quotes-slider .owl-prev{
+    float: left;
+    right: 25px;
+}
+.my-quotes-slider .owl-next{
+    float: right;
+    left: 25px;
+}
+.my-quotes-slider .owl-prev span,.my-quotes-slider .owl-next span{
+    position: relative;
+    top: -14px;
+    left: 1px;
+}
+.get-touch .row .col-lg-5{
+    height: 650px;
+}
+.get-touch .row .col-lg-5 input{
+    border-color: #D7C445!important;
+}
